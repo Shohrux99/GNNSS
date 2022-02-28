@@ -1,4 +1,4 @@
-#!d:\add web\malo\demo\scripts\python.exe
+#!d:\add web\gnss\gnss\demo\scripts\python.exe
 # When the django-admin.py deprecation ends, remove this script.
 import warnings
 
