@@ -34,3 +34,7 @@ def PtemplateView(request):
 
 
     return render(request,'plan/template.html')
+def LoginView(request):
+
+
+    return render(request,'main/login.html')
