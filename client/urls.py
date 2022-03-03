@@ -1,5 +1,8 @@
 from django.urls import path
 from .views import IndexView, CreateViews,DIndexView,DConforimView,PIndexView,PContractView,PtemplateView,LoginView
+from .apiview import Tekshir
+
+
 urlpatterns = [
     #mijoz
     path('',IndexView,name='cindex'),
@@ -13,4 +16,8 @@ urlpatterns = [
     path('plan/',PIndexView,name='pindex'),
     path('plan/contract',PContractView,name='pcontract'),
     path('plan/template',PtemplateView,name='ptemplate'),
+
+
+    #tekshir
+    path('tek/',Tekshir.as_view(),name='Tekshir'),
 ]
