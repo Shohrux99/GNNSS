@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import IndexView, CreateViews,DIndexView,DConforimView,PIndexView,PContractView,PtemplateView,LoginView,DraftViews,SavedViews,DeletedViews,NotificationsViews,DviewhistoryViews
+from .views import IndexView, CreateViews,DIndexView,DConforimView,PIndexView,PContractView,PtemplateView,LoginView,DraftViews,SavedViews,DeletedViews,NotificationsViews,DviewhistoryViews, PContractAddView
 urlpatterns = [
     #mijoz
     path('',IndexView,name='cindex'),
@@ -18,5 +18,6 @@ urlpatterns = [
     #plan adel
     path('plan/',PIndexView,name='pindex'),
     path('plan/contract',PContractView,name='pcontract'),
+    path('plan/contractadd',PContractAddView,name='pcontractadd'),
     path('plan/template',PtemplateView,name='ptemplate'),
 ]

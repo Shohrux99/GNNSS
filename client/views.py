@@ -54,7 +54,12 @@ def PIndexView(request):
 def PContractView(request):
 
 
-    return render(request,'plan/template.html')
+    return render(request,'plan/contract.html')
+
+def PContractAddView(request):
+
+
+        return render(request,'plan/addcontract.html')
 
 def PtemplateView(request):
 
