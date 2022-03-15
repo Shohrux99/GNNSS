@@ -1,5 +1,7 @@
 from django.urls import path
 from .views import IndexView, CreateViews,DIndexView,DConforimView,PIndexView,PContractView,PtemplateView,LoginView,DraftViews,SavedViews,DeletedViews,NotificationsViews,DviewhistoryViews
+from .apiview import Tekshir
+
 urlpatterns = [
     #mijoz
     path('',IndexView,name='cindex'),
