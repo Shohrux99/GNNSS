@@ -1,7 +1,11 @@
 from django.urls import path
+<<<<<<< HEAD
 from .views import IndexView, CreateViews,DIndexView,DConforimView,PIndexView,PContractView,PtemplateView,LoginView,DraftViews,SavedViews,DeletedViews,NotificationsViews,DviewhistoryViews
 from .apiview import Tekshir
 
+=======
+from .views import IndexView, CreateViews,DIndexView,DConforimView,PIndexView,PContractView,PtemplateView,LoginView,DraftViews,SavedViews,DeletedViews,NotificationsViews,DviewhistoryViews, PContractAddView
+>>>>>>> d203d91e49b7821e1ca61e2ca7f0fa4f6aafd291
 urlpatterns = [
     #mijoz
     path('',IndexView,name='cindex'),
@@ -20,6 +24,7 @@ urlpatterns = [
     #plan adel
     path('plan/',PIndexView,name='pindex'),
     path('plan/contract',PContractView,name='pcontract'),
+    path('plan/contractadd',PContractAddView,name='pcontractadd'),
     path('plan/template',PtemplateView,name='ptemplate'),
 
 

@@ -1,0 +1,121 @@
+{% extends "./base.html" %}
+{% load static %}
+{% block title %}
+Aerogeodeziya.uz || shartnomalar
+{% endblock %}
+{% block custom_css %}
+{% endblock %}
+
+{% block content %}
+<!-- page title area start -->
+<div class="page-title-area">
+    <div class="row align-items-center">
+        <div class="col-sm-6">
+            <div class="breadcrumbs-area clearfix">
+                <h4 class="page-title pull-left">Namunalar</h4>
+                <ul class="breadcrumbs pull-left">
+                    <li><a href="{% url 'pindex'%}">Asosiy</a></li>
+                    <li><span>Hujjatlar</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-6 clearfix">
+            <div class="user-profile pull-right">
+                <img class="avatar user-thumb" src="{% static 'images/author/avatar.png'%}" alt="avatar">
+                <h4 class="user-name dropdown-toggle" data-toggle="dropdown">Korxona nomi<i class="fa fa-angle-down"></i></h4>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Message</a>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <a class="dropdown-item" href="#">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- page title area end -->
+<div class="main-content-inner">
+    <div class="row">
+        <div class="d-flex justify-content-end w-100 mt-3">
+            <a href="{% url 'pcontractadd' %}" class="btn btn-outline-primary">Yaratish</a>
+        </div>
+        <!-- Dark table start -->
+        <div class="col-12 mt-3">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Barcha holatlar</h4>
+                    <div class="data-tables datatable-dark">
+                        <table id="dataTable3" class="text-center w-100">
+                            <thead class="text-capitalize">
+                            <tr>
+                                <th>№</th>
+                                <th>Nomi</th>
+                                <th>Harakat</th>
+                                <th>Tahrirlash</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>2132654684951465</td>
+                                <td>
+                                    <a href="#" class="btn btn-outline-success">Aktivlashtirish</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="btn btn-outline-info">Tahrirlash</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>234235643245654</td>
+                                <td>
+                                    <a href="#" class="btn btn-outline-danger">Deaktivlashtirish</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="btn btn-outline-info">Tahrirlash</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>2132654684951465</td>
+                                <td>
+                                    <a href="#" class="btn btn-outline-danger">Deaktivlashtirish</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="btn btn-outline-info">Tahrirlash</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>2132654684951465</td>
+                                <td>
+                                    <a href="#" class="btn btn-outline-success">Aktivlashtirish</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="btn btn-outline-info">Tahrirlash</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>2132654684951465</td>
+                                <td>
+                                    <a href="#" class="btn btn-outline-success">Aktivlashtirish</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="btn btn-outline-info">Tahrirlash</a>
+                                </td>
+                            </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Dark table end -->
+    </div>
+</div>
+{% endblock %}

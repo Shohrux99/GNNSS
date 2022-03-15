@@ -66,19 +66,9 @@
             <div class="menu-inner">
                 <nav>
                     <ul class="metismenu" id="menu">
-                        <li data-list="" class="navbar-list active"><a href="{% url 'pindex'%}"><i
-                                class="ti-arrow-circle-right"></i><span>Hujjatlar</span></a></li>
-                        <li data-list="create" class="navbar-list"><a href="{% url 'ccreate'%}"><i
-                                class="ti-layout-cta-left"></i> <span>Yaratish</span></a></li>
-                        <li data-list="csaved" class="navbar-list"><a href="{% url 'csaved'%}"><i
-                                class="ti-save"></i><span>Saqlanganlar</span></a></li>
-                        <li data-list="draft" class="navbar-list"><a href="{% url 'draft'%}"><i
-                                class="ti-layout-grid3-alt"></i> <span>Qoralama</span></a></li>
-                        <li data-list="cdeleted" class="navbar-list"><a href="{% url 'cdeleted'%}"><i
-                                class="ti-back-left"></i> <span>O'chirilgan</span></a></li>
-                        <li data-list="cnotifications" class="navbar-list"><a href="{% url 'cnotifications'%}"><i
-                                class="ti-layout-list-thumb-alt"></i> <span>Habar</span></a></li>
-                        <!--<li><a href="#"><i class="ti-layout-cta-left"></i> <span>Eski holat</span></a></li>-->
+                        <li data-list="plan" class="navbar-list active"><a href="{% url 'pindex'%}"><i class="ti-arrow-circle-right"></i><span>Shartnomalar</span></a></li>
+                        <li data-list="contract" class="navbar-list"><a href="{% url 'pcontract'%}"><i class="ti-layout-cta-left"></i> <span>Namunalar</span></a></li>
+                        <li data-list="template" class="navbar-list"><a href="{% url 'ptemplate'%}"><i class="ti-settings"></i><span>Sozlamalar</span></a></li>
                     </ul>
                 </nav>
             </div>
@@ -372,13 +362,13 @@
 <!-- offset area end -->
 
 {% load static %}
-<!-- footer area start-->
+<!-- footer area start
 <footer>
     <div class="footer-area">
         <p>© Copyright 2022. All right reserved.</p>
     </div>
 </footer>
-<!-- footer area end-->
+ footer area end-->
 {% include 'footer.html' %}
 
 

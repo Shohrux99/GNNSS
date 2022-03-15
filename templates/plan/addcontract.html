@@ -1,0 +1,208 @@
+{% extends "./base.html" %}
+{% load static %}
+{% block title %}
+Aerogeodeziya.uz || shartnomalar
+{% endblock %}
+{% block custom_css %}
+{% endblock %}
+
+{% block content %}
+<!-- page title area start -->
+<div class="page-title-area">
+    <div class="row align-items-center">
+        <div class="col-sm-6">
+            <div class="breadcrumbs-area clearfix">
+                <h4 class="page-title pull-left">Namuna tahrirlash</h4>
+                <ul class="breadcrumbs pull-left">
+                    <li><a href="{% url 'pindex'%}">Asosiy</a></li>
+                    <li><span>Hujjatlar</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-sm-6 clearfix">
+            <div class="user-profile pull-right">
+                <img class="avatar user-thumb" src="{% static 'images/author/avatar.png'%}" alt="avatar">
+                <h4 class="user-name dropdown-toggle" data-toggle="dropdown">Korxona nomi<i class="fa fa-angle-down"></i></h4>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Message</a>
+                    <a class="dropdown-item" href="#">Settings</a>
+                    <a class="dropdown-item" href="#">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- page title area end -->
+<div class="main-content-inner">
+    <div class="row">
+        <!-- Input Sizes start -->
+        <div class="col-12 mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Xizmat turi</h4>
+                    <div class="d-flex">
+                        <div class="dropdown w-100">
+                            <button class="btn btn-light dropdown-toggle w-100" type="button" data-toggle="dropdown">
+                                Hizmat turini tanlang
+                            </button>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Кафедра геодезии и топографии</a>
+                                <a class="dropdown-item" href="#">Постоянно действующий филиал управления станциями ГНСС</a>
+                                <a class="dropdown-item" href="#">Республиканская топонимическая служба</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Input Sizes end -->
+
+        <!-- Input Sizes start -->
+        <div class="col-12 mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="header-title">Hujjat turi:   Shartnoma (DSQ)</h4>
+                    <div class="d-flex">
+                        <input class="form-control form-control-lg m-4" type="text" placeholder="*Nomi">
+                        <input class="form-control form-control-lg m-4" type="text" placeholder="*Tuzish joyi">
+                        <input class="form-control form-control-lg m-4" type="text" placeholder="*Tuzish sanasi">
+                        <input class="form-control form-control-lg m-4" type="date" placeholder="*gacha amal qiladi">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Input Sizes end -->
+
+        <!-- Input Sizes start -->
+        <div class="col-12 mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div class="col-6">
+                            <h4 class="header-title">Sizning ma'lumotlaringiz</h4>
+                            <div>
+                                <div>
+                                    <input class="form-control form-control-lg my-4" type="text" placeholder="*STIR/JSHSHIR">
+                                    <input class="form-control form-control-lg" type="text" placeholder="*Nomi">
+                                </div>
+                                <div class="d-flex">
+                                    <input class="form-control form-control-lg my-4 mr-4" type="text" placeholder="*Jismoniy shaxs: JSHSHIR">
+                                    <input class="form-control form-control-lg my-4" type="text" placeholder="*FISH">
+                                </div>
+                                <div class="d-flex">
+                                    <input class="form-control form-control-lg mr-4" type="number" placeholder="*MFO">
+                                    <input class="form-control form-control-lg " type="text" placeholder="*Bankning nomi">
+                                </div>
+                                <div class="d-flex">
+                                    <input class="form-control form-control-lg my-4 mr-4" type="number" placeholder="*OKED">
+                                    <input class="form-control form-control-lg my-4" type="number" placeholder="*Hisob raqami">
+                                </div>
+                                <input class="form-control form-control-lg" type="text" placeholder="*Manzil">
+                                <div class="d-flex">
+                                    <input class="form-control form-control-lg my-4 mr-4" type="number" placeholder="*Telefon">
+                                    <input class="form-control form-control-lg my-4" type="number" placeholder="*Mobil telefon raqami">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-6">
+                            <h4 class="header-title">Kongragent ma'lumotlari</h4>
+                            <div>
+                                <div>
+                                    <input class="form-control form-control-lg my-4" type="text" placeholder="*STIR/JSHSHIR">
+                                    <input class="form-control form-control-lg" type="text" placeholder="*Nomi">
+                                </div>
+                                <div class="d-flex">
+                                    <input class="form-control form-control-lg my-4 mr-4" type="text" placeholder="*Jismoniy shaxs: JSHSHIR">
+                                    <input class="form-control form-control-lg my-4" type="text" placeholder="*FISH">
+                                </div>
+                                <div class="d-flex">
+                                    <input class="form-control form-control-lg mr-4" type="number" placeholder="*MFO">
+                                    <input class="form-control form-control-lg " type="text" placeholder="*Bankning nomi">
+                                </div>
+                                <div class="d-flex">
+                                    <input class="form-control form-control-lg my-4 mr-4" type="number" placeholder="*OKED">
+                                    <input class="form-control form-control-lg my-4" type="number" placeholder="*Hisob raqami">
+                                </div>
+                                <input class="form-control form-control-lg" type="text" placeholder="*Manzil">
+                                <div class="d-flex">
+                                    <input class="form-control form-control-lg my-4 mr-4" type="number" placeholder="*Telefon">
+                                    <input class="form-control form-control-lg my-4" type="number" placeholder="*Mobil telefon raqami">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Input Sizes end -->
+
+        <!-- Input Sizes start -->
+        <div class="col-12 mt-5">
+            <div class="card">
+                <div class="card-body">
+                    <div class="d-flex justify-content-between">
+                        <div class="col-12">
+                            <h4 class="header-title">Tarkibi</h4>
+                            <div>
+                                <div class="field_wrapper">
+                                    <div class="d-flex align-items-center">
+                                        <div class="w-100 mb-5">
+                                            <input type="text" class="form-control mr-2 mb-3" name="field_name[]" value="" placeholder="Sarlavhasi"/>
+                                            <input type="text" class="form-control mr-2" name="field_name[]" value="" placeholder="Matn" style="height: 100px !important"/>
+                                        </div>
+
+                                        <a href="javascript:void(0);" class="add_button align-self-start" title="Add field">
+                                            <i class="ti-plus" style="font-size: 40px;"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Input Sizes end -->
+
+
+    </div>
+
+
+
+</div>
+{% endblock %}
+
+{% block custom_js %}
+<script type="text/javascript">
+    $(document).ready(function(){
+        var maxField = 10; //Input fields increment limitation
+        var addButton = $('.add_button'); //Add button selector
+        var wrapper = $('.field_wrapper'); //Input field wrapper
+        var fieldHTML = '<div class="d-flex align-items-center"><div class="w-100 mb-5">' +
+            '<input type="text" class="form-control mr-2 mb-3" name="field_name[]" value="" placeholder="Sarlavhasi"/>' +
+            '<input type="text" class="form-control mr-2" name="field_name[]" value="" placeholder="Matn" style="height: 100px !important"/>' +
+            '</div><a href="javascript:void(0);" class="remove_button"><i class="ti-minus" style="font-size: 40px;"></i></a></div>'; //New input field html*/
+        var x = 1; //Initial field counter is 1
+
+        //Once add button is clicked
+        $(addButton).click(function(){
+            //Check maximum number of input fields
+            if(x < maxField){
+                x++; //Increment field counter
+                $(wrapper).append(fieldHTML); //Add field html
+            }
+        });
+
+        //Once remove button is clicked
+        $(wrapper).on('click', '.remove_button', function(e){
+            e.preventDefault();
+            $(this).parent('div').remove(); //Remove field html
+            x--; //Decrement field counter
+        });
+    });
+</script>
+{% endblock %}
+
+
+
